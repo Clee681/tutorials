@@ -18,7 +18,7 @@ That's the nature of building something - embrace it!
 *This post assumes you are using Mac OS X*
 
 1. Open the `Terminal` application
-  * This is a command line interface to your computer. It's also your new home along with your text editor.
+  * This is a command line interface to your computer. You'll be spending a lot of time here.
 
 2. Install Homebrew (package manager for Mac OS X)
   * Visit `http://brew.sh/` in your favorite browser
@@ -27,38 +27,51 @@ That's the nature of building something - embrace it!
 
 3. Check that homebrew installed successfully by running `brew --version`. You should see a version number like `0.9.5`
 
-4. With brew successfully installed, we are going to run the following commands. `rbenv` is a tool to help us manage different ruby installations.
+4. With brew successfully installed, we are going to run the following commands.
 
-```bash
-# Don't type the $. The $ is a common symbol to signify a shell prompt
-$ brew update
-$ brew install rbenv ruby-build
-$ rbenv init -
-```
+  ```bash
+  # Don't type the $. The $ is a common symbol to signify a shell prompt
+  $ brew update
+  $ brew install rbenv ruby-build
+  $ rbenv init -
+  ```
+
+  *Note: `rbenv` is a tool to help us manage different ruby installations.*
 
 5. Now, we're close to installing a specific version of ruby
 
-```bash
-# List all available versions:
-$ rbenv install -l
+  ```bash
+  # List all available versions:
+  $ rbenv install -l
 
-# Install a Ruby version:
-$ rbenv install 2.2.2
-```
+  # Install a Ruby version:
+  $ rbenv install 2.2.2
+  ```
 
 6. Here are some useful `rbenv` commands
 
-```bash
-# Show current ruby versions installed.
-# The ruby version you are using will have an asterisk next to it
-$ rbenv versions
+  ```bash
+  # Show current ruby versions installed.
+  # The ruby version you are using will have an asterisk next to it
+  $ rbenv versions
 
-# Switch to a specific ruby version:
-$ rbenv shell 2.2.2
-```
+  # Switch to a specific ruby version:
+  $ rbenv shell 2.2.2
+  ```
 
 7. With the most recent version of ruby installed, we can run our first ruby program! The output of running the below command should be `Hello, world!`.
 
-```bash
-$ ruby -e "puts 'Hello, world!'"
-```
+  ```bash
+  $ ruby -e "puts 'Hello, world!'"
+  ```
+
+8. Very soon, you'll be writing much larger programs. Consequently, executing ruby code as a string argument to the ruby interpreter will become impractical. Instead we'll write code in a separate text file, and pass the file to the ruby interpreter. A text editor will allow us to edit plain text. Two popular text editors today are listed below. Choose whichever one you like.
+
+  * [Sublime Text 3](http://www.sublimetext.com/)
+  * [Atom](https://atom.io/)
+
+9. You'll also need a Github account. Sign up for a free account [here](https://github.com/). Github is a popular site for sharing and collaborating on projects. This tutorial is actually hosted by github. If you see an error in this guide or have something you'd like to add, just file a new issue under the project, and I'll be notified. We can then work together to make this guide better.
+
+## Learning Resources
+
+After setting up your local environment, I recommend reading through Zed Shaw's [Learn Ruby the Hard Way](http://learnrubythehardway.org/book/). It's free, and will have you writing a lot of small programs. Don't skip the exercises, and don't copy and paste!
