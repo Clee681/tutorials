@@ -51,8 +51,10 @@ That's the nature of building something - embrace it!
 6. Here are some useful `rbenv` commands
 
   ```bash
-  # Show current ruby versions installed.
+  # Show current ruby versions installed
   # The ruby version you are using will have an asterisk next to it
+  # Notice that there is a system ruby! Macs come with a ruby version pre-installed
+  # We actually used the system ruby to install homebrew earlier
   $ rbenv versions
 
   # Switch to a specific ruby version:
@@ -65,7 +67,7 @@ That's the nature of building something - embrace it!
   $ ruby -e "puts 'Hello, world!'"
   ```
 
-8. Very soon, you'll be writing much larger programs. Consequently, executing ruby code as a string argument to the ruby interpreter will become impractical. Instead we'll write code in a separate text file, and pass the file to the ruby interpreter. A text editor will allow us to edit plain text. Two popular text editors today are listed below. Choose whichever one you like.
+8. Very soon, you'll be writing much larger programs. Consequently, executing ruby code as a string argument to the ruby interpreter will become impractical. Instead, we'll write code in a separate text file, and pass the file to the ruby interpreter. A text editor will allow us to edit plain text. Two popular text editors today are listed below. Choose whichever one you like.
 
   * [Sublime Text 3](http://www.sublimetext.com/)
   * [Atom](https://atom.io/)
